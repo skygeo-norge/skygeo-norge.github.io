@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SkyGeo 2026 – Nasjonal konferanse om Cloud Native Geospatial</title>
-  <meta name="description" content="Nasjonal konferanse om Cloud Native Geospatial for raster- og vektordata. Showcaser, verktøy og rundbord om åpne skybaserte formater. Oslo, Skøyen.">
-  <meta property="og:title" content="SkyGeo 2026 – Cloud Native Geospatial for norske kartdata">
-  <meta property="og:description" content="Nasjonal konferanse om Cloud Native Geospatial. Oslo, Skøyen.">
+  <title>SkyGeo 2027 – Nasjonal konferanse om Cloud Native Geospatial</title>
+  <meta name="description" content="Nasjonal konferanse om Cloud Native Geospatial for raster- og vektordata. Foredrag, demoer, kurs og rundbord om åpne skybaserte formater. Oslo, Helsfyr.">
+  <meta property="og:title" content="SkyGeo 2027 – Cloud Native Geospatial for norske kartdata">
+  <meta property="og:description" content="Nasjonal konferanse om Cloud Native Geospatial. Oslo, Helsfyr.">
   <meta property="og:type" content="website">
   <!-- TODO: legg til og:image og og:url når domenet er på plass -->
   <meta name="theme-color" content="#0B3A4A">
@@ -122,12 +122,6 @@
     .hero .when { font: 700 var(--step-2)/1.1 var(--font-display); letter-spacing: -0.01em; margin: 1.8rem 0 1.4rem; }
     .hero .when .sep { color: var(--cloudberry); padding-inline: .4em; }
     .hero .lede { font-size: var(--step-1); line-height: 1.45; color: #D4E4E8; max-width: 52ch; margin-bottom: 2rem; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: .8rem; }
-    .hero .btn { font-size: var(--step-1); padding: 1em 1.8em; }
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: clamp(2.5rem, 6vw, 5rem); padding-top: 1.6rem; border-top: 3px solid #fff; }
-    .stats b { display: block; font: 800 var(--step-4)/1 var(--font-display); letter-spacing: -0.03em; }
-    .stats span { display: block; margin-top: .3rem; font-size: var(--step--1); color: var(--lichen); }
-    @media (max-width: 720px) { .stats { grid-template-columns: 1fr 1fr; } }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
     /* ---------- Logoer ---------- */
@@ -145,12 +139,11 @@
     .compare-item { border-left: 4px solid var(--line); padding-left: 1.1rem; }
     .compare-item.raster { border-left-color: var(--sea-3); }
     .compare-item.vector { border-left-color: var(--lichen); }
-    .compare-item.now { border-left-color: var(--ink); }
     .compare-item h3 { font-size: var(--step-0); margin-bottom: .25rem; }
     .compare-item p { margin: 0; color: var(--ink-soft); }
     @media (max-width: 860px) { .why .wrap { grid-template-columns: 1fr; } .why h2 { position: static; } }
 
-    /* ---------- Dette tar du med deg ---------- */
+    /* ---------- Rundbord ---------- */
     .outcomes { background: var(--paper-2); }
     .outcomes h2 { margin-bottom: 2.5rem; max-width: 20ch; text-wrap: balance; }
     .outcome-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 2px solid var(--ink); }
@@ -164,8 +157,8 @@
     }
 
     /* ---------- Program ---------- */
-    .program-head { display: flex; justify-content: space-between; align-items: end; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-    .program-head p { margin: .8rem 0 0; color: var(--ink-soft); }
+    .program-head { display: flex; justify-content: space-between; align-items: end; gap: 1rem 1.5rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .program-head p { margin: 0; color: var(--ink-soft); }
     .timeline { display: grid; gap: 0; }
     .slot { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1.5rem; padding-block: 1.1rem; border-top: 1px solid var(--line); }
     .slot-time { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--sea-2); }
@@ -179,37 +172,30 @@
     .slot.break h3 { font-weight: 400; color: var(--ink-soft); }
     .slot.break .slot-time { font-weight: 400; color: var(--ink-soft); }
     .slot.roundtable { border-top: 2px solid var(--cloudberry); }
-    .part-title { font: 700 var(--step-1)/1.2 var(--font-display); padding: 2.4rem 0 .9rem; border-top: 2px solid var(--ink); margin-top: 2rem; }
-    .part-title:first-child { margin-top: 0; border-top: 0; padding-top: 0; }
-    .part-title small { display: block; font: 500 var(--step--1)/1.4 var(--font-body); color: var(--ink-soft); letter-spacing: 0; margin-top: .25rem; }
     @media (max-width: 640px) { .slot { grid-template-columns: 1fr; gap: .2rem; } }
 
-    /* ---------- Workshop ---------- */
-    .workshop { background: var(--sea); color: #fff; }
-    .workshop .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
-    .workshop h2 { margin-bottom: 1rem; text-wrap: balance; }
-    .workshop p { color: #D4E4E8; }
-    @media (max-width: 860px) { .workshop .wrap { grid-template-columns: 1fr; } }
+    /* ---------- Innsending ---------- */
+    .submit { background: var(--sea); color: #fff; }
+    .submit .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+    .submit h2 { margin-bottom: 1rem; text-wrap: balance; }
+    .submit p { color: #D4E4E8; }
+    .submit .deadline { color: #fff; font-size: var(--step-1); margin-bottom: 1.6rem; }
+    .format-list li { padding-block: 1rem; border-top: 1px solid rgba(255,255,255,.2); }
+    .format-list li:last-child { border-bottom: 1px solid rgba(255,255,255,.2); }
+    .format-list h3 { font-family: var(--font-body); font-size: var(--step-0); font-weight: 600; letter-spacing: 0; }
+    .format-list p { margin: .1rem 0 0; font-size: var(--step--1); color: var(--lichen); }
+    @media (max-width: 860px) { .submit .wrap { grid-template-columns: 1fr; } }
 
-    .showcase-list li { padding-block: 1rem; border-top: 1px solid rgba(255,255,255,.2); }
-    .showcase-list li:last-child { border-bottom: 1px solid rgba(255,255,255,.2); }
-    .showcase-list h3 { font-family: var(--font-body); font-size: var(--step-0); font-weight: 600; letter-spacing: 0; }
-    .showcase-list p { margin: .1rem 0 0; font-size: var(--step--1); color: var(--lichen); }
-    .workshop .note { font-size: var(--step--1); color: var(--lichen); margin-top: 1.2rem; }
-
-    /* ---------- Hvem ---------- */
+    /* ---------- Hvem + utbytte ---------- */
     .audience { background: var(--paper-2); }
-    .outcomes.plain { background: var(--paper); }
-    .audience h2 { margin-bottom: 2.5rem; max-width: 22ch; text-wrap: balance; }
-    .audience-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-    .persona { border-top: 4px solid var(--sea-3); padding-top: 1rem; }
-    .persona:nth-child(2) { border-top-color: var(--lichen); }
-    .persona:nth-child(3) { border-top-color: var(--sea-2); }
-    .persona:nth-child(4) { border-top-color: var(--cloudberry); }
-    .persona h3 { margin-bottom: .5rem; }
-    .persona p { color: var(--ink-soft); font-size: var(--step--1); margin: 0; }
-    @media (max-width: 960px) { .audience-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .audience-grid { grid-template-columns: 1fr; } }
+    .audience { background: var(--paper-2); }
+    .audience .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+    .audience h2 { font-size: var(--step-2); margin-bottom: 1.5rem; text-wrap: balance; }
+    .brief-list { border-top: 2px solid var(--ink); }
+    .brief-list li { padding-block: 1rem; border-bottom: 1px solid var(--line); }
+    .brief-list h3 { font-size: var(--step-0); margin-bottom: .15rem; }
+    .brief-list p { margin: 0; color: var(--ink-soft); font-size: var(--step--1); }
+    @media (max-width: 860px) { .audience .wrap { grid-template-columns: 1fr; } }
 
     /* ---------- Praktisk + pris ---------- */
     .practical { background: var(--paper); border-top: 1px solid var(--line); }
@@ -218,33 +204,9 @@
     .info-list { display: grid; gap: 1.1rem; margin: 0; }
     .info-list dt { font-weight: 600; }
     .info-list dd { margin: 0; color: var(--ink-soft); }
-    .ticket { background: #fff; border: 2px solid var(--ink); border-radius: var(--radius); padding: clamp(1.4rem, 3vw, 2.2rem); align-self: start; }
-    .ticket h3 { margin-bottom: 1rem; }
-    .price-row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-block: .8rem; border-bottom: 1px solid var(--line); }
-    .price-row:last-of-type { border-bottom: 0; margin-bottom: .6rem; }
-    .price-row span:last-child { font: 700 var(--step-1)/1 var(--font-display); }
-    .price-note { font-size: var(--step--1); color: var(--ink-soft); margin: 0 0 1.2rem; }
-    .ticket .btn { width: 100%; }
     @media (max-width: 860px) { .practical .wrap { grid-template-columns: 1fr; } }
 
-    /* ---------- Billetter ---------- */
-    .tickets { background: var(--paper); border-top: 3px solid var(--ink); }
-    .tickets h2 { margin-bottom: 1rem; }
-    .tickets-lead { color: var(--ink-soft); margin-bottom: 2.5rem; }
-    .tiers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; max-width: 820px; }
-    .tier { border: 3px solid var(--ink); border-radius: var(--radius); padding: clamp(1.4rem, 3vw, 2.2rem); background: #fff; display: flex; flex-direction: column; gap: 1.2rem; }
-    .tier h3 { font-size: var(--step-1); }
-    .tier .price { font: 800 var(--step-4)/1 var(--font-display); letter-spacing: -0.03em; margin: 0; }
-    .tier .btn { margin-top: auto; }
-    @media (max-width: 640px) { .tiers { grid-template-columns: 1fr; } }
-
-    .partners-section { background: var(--paper-2); }
-    .partners-section h2 { margin-bottom: 2.5rem; max-width: 18ch; text-wrap: balance; }
-    .partner-wall { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 3px solid var(--ink); }
-    .partner-wall li { padding: 1.6rem 1rem 1.6rem 0; font: 800 var(--step-1)/1.1 var(--font-display); letter-spacing: -0.02em; border-bottom: 1px solid var(--line); }
-    .partners-note { margin-top: 1.2rem; font-size: var(--step--1); }
     .tbd-block { color: var(--ink-soft); }
-    @media (max-width: 760px) { .partner-wall { grid-template-columns: 1fr 1fr; } }
 
     /* ---------- FAQ ---------- */
     .faq .wrap { max-width: 820px; }
@@ -257,20 +219,18 @@
     details[open] summary::after { content: "–"; }
     details p { color: var(--ink-soft); padding-bottom: 1.2rem; margin: 0; }
 
-    .coc h2 { font-size: var(--step-2); margin-bottom: 1rem; }
-    .coc p { color: var(--ink-soft); }
-    .coc { padding-block: clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--line); }
-
     /* ---------- Avsluttende CTA ---------- */
     .final { background: var(--sea); color: #fff; text-align: center; }
     .final h2 { font-size: var(--step-4); margin-bottom: 1rem; text-wrap: balance; }
     .final p { margin-inline: auto; color: #D4E4E8; font-size: var(--step-0); line-height: 1.5; }
     .final .btn { margin-top: .8rem; }
+    .final .price-line { margin-top: 1.4rem; font-size: var(--step--1); }
 
     /* ---------- Footer ---------- */
     .site-footer { background: #072A37; color: #BCD0D5; padding-block: 3rem; font-size: var(--step--1); }
     .site-footer .wrap { display: grid; gap: 2rem; }
     .site-footer p { margin: 0; max-width: 70ch; }
+    .site-footer a { color: #fff; }
 
     /* Rask CTA i bunn på mobil */
     .sticky-cta { display: none; }
@@ -292,18 +252,15 @@
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="#top" aria-label="SkyGeo 2026 – til toppen">
+      <a class="brand" href="#top" aria-label="SkyGeo 2027 – til toppen">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        SkyGeo 2026
+        SkyGeo 2027
       </a>
       <nav class="nav" aria-label="Hovedmeny">
         <a href="#hvorfor">Om SkyGeo</a>
         <a href="#program">Program</a>
-        <a href="#rundbord">Rundbord</a>
-        <a href="#billetter">Billetter</a>
-        <a href="#partnere">Partnere</a>
-        <a href="#faq">Kjekt å vite</a>
-        <a class="btn btn-primary btn-sm cta" href="#pamelding">Meld deg på</a>
+        <a href="#innsending" id="submit-nav">Send inn forslag</a>
+        <a class="btn btn-primary btn-sm cta" href="#pamelding">Påmelding</a>
       </nav>
     </div>
   </header>
@@ -313,21 +270,9 @@
     <!-- ===== HERO ===== -->
     <div class="hero on-dark" id="top">
       <div class="wrap">
-        <h1>SkyGeo <span class="yr">2026</span><small>Nasjonal konferanse om Cloud Native Geospatial</small></h1>
-        <p class="when"><span class="tbd">[dato 2026]</span><span class="sep" aria-hidden="true">/</span>Skøyen, Oslo</p>
-        <p class="lede">Resultater, verktøy og diskusjoner om åpne, skybaserte formater for raster- og vektordata. Med bidrag fra Kartverket, Kystverket, Miljødirektoratet og Norkart.</p>
-
-        <div class="cta-row">
-          <a class="btn btn-primary cta" href="#pamelding">Meld deg på</a>
-          <a class="btn btn-ghost" href="#program">Se programmet</a>
-        </div>
-
-        <div class="stats">
-          <div><b>1</b><span>dag på Skøyen</span></div>
-          <div><b>7</b><span>rundbord å velge mellom</span></div>
-          <div><b>4</b><span>organisasjoner bak SkyGeo</span></div>
-          <div><b>2</b><span>datatyper: raster og vektor</span></div>
-        </div>
+        <h1>SkyGeo <span class="yr">2027</span><small>Nasjonal konferanse om Cloud Native Geospatial</small></h1>
+        <p class="when">20. januar 2027<span class="sep" aria-hidden="true">/</span>Miljødirektoratet på Helsfyr, Oslo</p>
+        <p class="lede">Resultater, verktøy og diskusjoner om åpne, skybaserte formater for raster- og vektordata.</p>
       </div>
     </div>
 
@@ -346,13 +291,13 @@
       </div>
     </div>
 
-    <!-- ===== HVORFOR ===== -->
+    <!-- ===== OM SKYGEO ===== -->
     <section class="why" id="hvorfor">
       <div class="wrap">
         <h2>Fra tjenester og nedlasting til åpne formater i skyen</h2>
         <div>
-          <p>Flybilder, høydedata, satellittdata og kartdata er en del av Norges digitale grunnmur. Distribusjonen bygger i stor grad på eldre teknologi som WMS, WMTS og filnedlasting, som ikke er laget for sky og maskinell storbruk.</p>
-          <p>Cloud Native Geospatial handler om åpne formater og standarder som lar deg bruke store datasett direkte fra skyplattformer. Teknologien er i bruk hos blant andre NASA, ESA/Copernicus og Microsoft Planetary Computer. I Norge er arbeidet fortsatt i en tidlig og fragmentert fase.</p>
+          <p>Flybilder, høydedata og kartdata er en del av Norges digitale grunnmur, men distribusjonen bygger på eldre teknologi som WMS, WMTS og filnedlasting, som ikke er laget for sky og maskinell storbruk.</p>
+          <p>Cloud Native Geospatial gir åpne formater og standarder som lar deg bruke store datasett direkte fra skyen. Teknologien brukes av blant andre NASA, ESA og Microsoft Planetary Computer. I Norge er arbeidet fortsatt tidlig og fragmentert, og SkyGeo er den første åpne arenaen for å dele resultatene.</p>
 
           <div class="compare">
             <div class="compare-item raster">
@@ -363,36 +308,31 @@
               <h3>Vektordata</h3>
               <p>Kartdata og posisjonsdata i skyvennlige formater som PMTiles og GeoParquet, og tilnærminger for store datamengder som AIS-data hos Kystverket.</p>
             </div>
-            <div class="compare-item now">
-              <h3>SkyGeo-initiativet</h3>
-              <p>Kartverket, Kystverket, Miljødirektoratet og Norkart har gjort konkrete forsøk på norske data. Konferansen er den første åpne arenaen for å dele resultatene.</p>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== HVEM ===== -->
+    <!-- ===== HVEM + UTBYTTE ===== -->
     <section class="audience" id="hvem">
       <div class="wrap">
-        <h2>Hvem konferansen er for</h2>
-        <div class="audience-grid">
-          <div class="persona">
-            <h3>IT-bransjen</h3>
-            <p>Du utvikler løsninger som bruker geodata og vil følge utviklingen i hvordan data gjøres tilgjengelig.</p>
-          </div>
-          <div class="persona">
-            <h3>Geomatikkbransjen</h3>
-            <p>Du leverer kart, analyse og rådgivning og vil vite hva teknologien betyr for arbeidsflytene dine.</p>
-          </div>
-          <div class="persona">
-            <h3>Offentlig sektor</h3>
-            <p>Du forvalter eller bruker nasjonale data og trenger underlag for valg om arkitektur og eierskap.</p>
-          </div>
-          <div class="persona">
-            <h3>Forskning og utdanning</h3>
-            <p>Du jobber med GIS, geomatikk eller jordobservasjon. Studenter er velkomne.</p>
-          </div>
+        <div>
+          <h2>Hvem konferansen er for</h2>
+          <ul class="brief-list">
+            <li><h3>IT-bransjen</h3><p>Du utvikler løsninger som bruker geodata.</p></li>
+            <li><h3>Geomatikkbransjen</h3><p>Du leverer kart, analyse og rådgivning.</p></li>
+            <li><h3>Offentlig sektor</h3><p>Du forvalter eller bruker nasjonale data.</p></li>
+            <li><h3>Forskning og utdanning</h3><p>Du jobber med GIS, geomatikk eller jordobservasjon. Studenter er velkomne.</p></li>
+          </ul>
+        </div>
+        <div id="utbytte">
+          <h2>Hva konferansen skal gi deg</h2>
+          <ul class="brief-list">
+            <li><h3>Resultater fra praksis</h3><p>Foredrag og demoer fra dem som har brukt CNG på norske data.</p></li>
+            <li><h3>Oversikt over verktøykassen</h3><p>COG, STAC, PMTiles, GeoParquet og Zarr, kort og forståelig.</p></li>
+            <li><h3>Rundbord</h3><p>Diskusjon om temaene du bryr deg om.</p></li>
+            <li><h3>Retning for veien videre</h3><p>Hvem eier og utvikler verktøyene etter forskningsprosjektene?</p></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -401,117 +341,64 @@
     <section id="program">
       <div class="wrap">
         <div class="program-head">
-          <div>
-            <h2>Program</h2>
-            <p>Programmet er tentativt. Klokkeslett, innlegg og foredragsholdere kan endres.</p>
-          </div>
-          <a class="btn btn-ghost-light btn-sm cta" href="#pamelding">Meld deg på</a>
+          <h2>Program</h2>
+          <p>Programmet er tentativt. Klokkeslett og innhold kan endres.</p>
         </div>
 
         <div class="timeline">
-          <h3 class="part-title">Formiddag<small>Bakgrunn, verktøy og resultater</small></h3>
           <div class="slot milestone">
             <div class="slot-time">08:30–09:00</div>
-            <div><h3>Registrering og kaffe</h3><p>Mingling, plakater og demoer i foajeen</p></div>
+            <div><h3>Registrering</h3><p>Kaffe, mingling og plakater i foajeen</p></div>
           </div>
           <div class="slot">
             <div class="slot-time">09:00–09:10</div>
-            <div><h3>Velkommen og rammer</h3><p>Hvorfor SkyGeo, dagens opplegg og praktisk informasjon</p></div>
+            <div><h3>Velkommen</h3></div>
           </div>
           <div class="slot feature">
             <div class="slot-time">09:10–09:40</div>
-            <div><h3>Keynote</h3><p>Cloud Native Geospatial: hva det er, hvorfor nå, og hva det betyr for norske geodata. <span class="tbd">[keynote-taler]</span></p></div>
+            <div><h3>Keynote</h3></div>
           </div>
           <div class="slot">
-            <div class="slot-time">09:40–10:10</div>
-            <div><h3>CNG-verktøykassen</h3><p>COG, STAC, PMTiles, GeoParquet og Zarr, kort og forståelig</p></div>
+            <div class="slot-time">09:40–12:00</div>
+            <div><h3>Foredrag, demoer og kurs</h3></div>
           </div>
           <div class="slot break">
-            <div class="slot-time">10:10–10:30</div>
-            <div><h3>Pause</h3></div>
-          </div>
-          <div class="slot">
-            <div class="slot-time">10:30–11:25</div>
-            <div><h3>Showcaser, blokk 1</h3><p>Fire korte innlegg om erfaringer og resultater. Se showcaser lenger ned.</p></div>
-          </div>
-          <div class="slot">
-            <div class="slot-time">11:25–12:05</div>
-            <div><h3><span class="tbd">[Fleksibel slot]</span></h3><p>Avklares: ekstra showcase, kort hands-on-intro eller buffer</p></div>
-          </div>
-          <div class="slot break">
-            <div class="slot-time">12:05–13:00</div>
+            <div class="slot-time">12:00–13:00</div>
             <div><h3>Lunsj</h3></div>
           </div>
-
-          <h3 class="part-title">Etter lunsj<small>Internasjonalt perspektiv og flere resultater</small></h3>
           <div class="slot">
-            <div class="slot-time">13:00–13:40</div>
-            <div><h3>Hva skjer ute i verden?</h3><p>STAC og metadata (ESA), NASA, Planetary Computer og internasjonale trender. <span class="tbd">[internasjonalt innslag]</span></p></div>
-          </div>
-          <div class="slot">
-            <div class="slot-time">13:40–14:00</div>
-            <div><h3>Showcaser, blokk 2</h3><p>To korte innlegg, eventuelt erstattet av en hands-on-workshop</p></div>
-          </div>
-          <div class="slot break">
-            <div class="slot-time">14:00–14:15</div>
-            <div><h3>Pause</h3></div>
-          </div>
-
-          <h3 class="part-title">Rundbord og veien videre<small>Diskusjon, oppsummering og neste steg</small></h3>
-          <div class="slot">
-            <div class="slot-time">14:15–14:25</div>
-            <div><h3>Introduksjon til rundbord</h3><p>Format, regler og valg av bord</p></div>
+            <div class="slot-time">13:00–14:15</div>
+            <div><h3>Foredrag, demoer og kurs</h3></div>
           </div>
           <div class="slot roundtable">
-            <div class="slot-time">14:25–15:05</div>
-            <div><h3>Rundbord, runde 1</h3><p>Sju bord med ulike temaer. Se rundbord lenger ned.</p></div>
+            <div class="slot-time">14:15–15:30</div>
+            <div><h3>Rundbordsdiskusjoner</h3><p>Velg blant sju temaer i to runder, med oppsummering fra bordene.</p></div>
           </div>
-          <div class="slot break">
-            <div class="slot-time">15:05–15:20</div>
-            <div><h3>Pause</h3></div>
-          </div>
-          <div class="slot roundtable">
-            <div class="slot-time">15:20–16:00</div>
-            <div><h3>Rundbord, runde 2</h3><p>Bytt bord og fortsett diskusjonen</p></div>
-          </div>
-          <div class="slot break">
-            <div class="slot-time">16:00–16:15</div>
-            <div><h3>Pause</h3></div>
-          </div>
-          <div class="slot">
-            <div class="slot-time">16:15–17:00</div>
-            <div><h3>Oppsummering fra bordene</h3><p>Hvert bord presenterer hovedpunktene sine på tre minutter</p></div>
-          </div>
-          <div class="slot">
-            <div class="slot-time">17:00–17:20</div>
-            <div><h3>Veien videre</h3><p>Eierskap, «open source graveyard» og neste steg</p></div>
-          </div>
-          <div class="slot">
-            <div class="slot-time">17:20–17:30</div>
-            <div><h3>Takk for i dag</h3></div>
+          <div class="slot feature">
+            <div class="slot-time">15:30–16:00</div>
+            <div><h3>Keynote</h3></div>
           </div>
           <div class="slot milestone">
-            <div class="slot-time">17:30</div>
-            <div><h3>Avslutning</h3><p>Eventuelt uformell mingling etterpå</p></div>
+            <div class="slot-time">16:00–</div>
+            <div><h3>Afterparty</h3></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== SHOWCASER ===== -->
-    <section class="workshop on-dark" id="showcaser">
+    <!-- ===== INNSENDING ===== -->
+    <section class="submit on-dark" id="innsending">
       <div class="wrap">
         <div>
-          <h2>Showcaser: erfaringer fra de som har gjort det</h2>
-          <p>Korte innlegg om hva CNG har betydd for ekte data og ekte løsninger, med både raster og vektor. Utvalget er ikke endelig.</p>
-          <p class="note">Hands-on-delen er ikke avklart. Den kan komme som en kort introduksjon eller en egen workshop i stedet for andre showcase-blokk. <span class="tbd">[oppdater når avklart]</span></p>
+          <h2>Send inn forslag</h2>
+          <p>Har du resultater eller erfaringer med Cloud Native Geospatial? Vi vil gjerne ha forslag til foredrag, demoer og kurs.</p>
+          <p class="deadline"><strong>Frist for innsending: 10. desember</strong></p>
+          <a class="btn btn-primary" href="#innsending" id="submit-link">Send inn forslag</a>
         </div>
-        <ul class="showcase-list">
-          <li><h3>SkyGeo: forskningsaktiviteter og resultater</h3><p>SkyGeo-konsortiet</p></li>
-          <li><h3>Cloud Native Geospatial på store mengder AIS-data</h3><p>Kystverket</p></li>
-          <li><h3>PMTiles og visualisering i stordrift</h3><p>Norkart</p></li>
-          <li><h3>Erfaringer fra forskningsprosjektet LAVDAS</h3><p>Miljødirektoratet og Kartverket</p></li>
-          <li><h3>Resultater fra Proof-of-Concepts med CNG</h3><p>Kartverket</p></li>
+        <ul class="format-list">
+          <li><h3>Foredrag</h3><p>Del erfaringer og resultater fra praksis.</p></li>
+          <li><h3>Demo</h3><p>Vis hvordan det fungerer på ekte data.</p></li>
+          <li><h3>Kurs</h3><p>Lær bort et verktøy eller en arbeidsflyt.</p></li>
         </ul>
       </div>
     </section>
@@ -533,77 +420,15 @@
       </div>
     </section>
 
-    <!-- ===== UTBYTTE ===== -->
-    <section class="outcomes plain" id="utbytte">
-      <div class="wrap">
-        <h2>Hva konferansen skal gi deg</h2>
-        <ul class="outcome-list">
-          <li>
-            <h3>Resultater fra praksis</h3>
-            <p>Showcaser fra Proof-of-Concepts, AIS-data, PMTiles i stordrift og forskningsprosjektet LAVDAS.</p>
-          </li>
-          <li>
-            <h3>En oversikt over verktøykassen</h3>
-            <p>COG, STAC, PMTiles, GeoParquet og Zarr, forklart kort og forståelig, med utsyn til hva som skjer internasjonalt.</p>
-          </li>
-          <li>
-            <h3>Rundbord om temaene du bryr deg om</h3>
-            <p>Sju temaer, fra vektor- og rasterdata til KI-agenter, visualisering og strategi. Du kan bytte bord mellom rundene.</p>
-          </li>
-          <li>
-            <h3>Retning for veien videre</h3>
-            <p>Hvem eier og utvikler verktøyene etter at forskningsprosjektene er avsluttet, og hvordan unngår vi en «open source graveyard»?</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ===== BILLETTER ===== -->
-    <section class="tickets" id="billetter">
-      <div class="wrap">
-        <h2>Billetter</h2>
-        <p class="tickets-lead">Deltakeravgiften holdes lav, slik at studenter, offentlig ansatte og mindre virksomheter kan delta. Prisen dekker <span class="tbd">[bekreft: kaffe og lunsj]</span>. <span class="tbd">[Nevn evt. støtte fra Forskningsrådet etter avklaring]</span></p>
-        <!-- TODO: fyll inn priser, og vurder flere nivåer (f.eks. tidlig påmelding) hvis dere ønsker det -->
-        <div class="tiers">
-          <div class="tier">
-            <h3>Ordinær</h3>
-            <p class="price"><span class="tbd">[kr]</span></p>
-            <a class="btn btn-primary cta" href="#pamelding">Meld deg på</a>
-          </div>
-          <div class="tier">
-            <h3>Student</h3>
-            <p class="price"><span class="tbd">[kr]</span></p>
-            <a class="btn btn-ghost-light cta" href="#pamelding">Meld deg på</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PARTNERE ===== -->
-    <section class="partners-section" id="partnere">
-      <div class="wrap">
-        <h2>Arrangert av SkyGeo-initiativet</h2>
-        <!-- TODO: bytt tekstnavnene med logoer (SVG) når dere har dem -->
-        <ul class="partner-wall">
-          <li>Kartverket</li>
-          <li>Kystverket</li>
-          <li>Miljødirektoratet</li>
-          <li>Norkart</li>
-        </ul>
-        <p class="partners-note"><span class="tbd">[Støttelogo fra Norges forskningsråd og evt. andre partnere]</span></p>
-      </div>
-    </section>
-
     <!-- ===== PRAKTISK ===== -->
     <section class="practical" id="praktisk">
       <div class="wrap">
         <div>
           <h2>Praktisk informasjon</h2>
           <dl class="info-list">
-            <div><dt>Dato og tid</dt><dd><span class="tbd">[dato 2026]</span>, kl. 08:30–17:30</dd></div>
-            <div><dt>Sted</dt><dd>Skøyen, Oslo. <span class="tbd">[lokale og adresse]</span></dd></div>
+            <div><dt>Dato og tid</dt><dd>20. januar 2027, kl. 08:30–16:00, deretter afterparty</dd></div>
+            <div><dt>Sted</dt><dd>Miljødirektoratet på Helsfyr, Oslo. <span class="tbd">[adresse og lokale]</span></dd></div>
             <div><dt>Språk</dt><dd><span class="tbd">[norsk / engelsk – avklar]</span></dd></div>
-            <div><dt>Strømming</dt><dd>Vi vurderer digital strømming av forelesningsdelen. <span class="tbd">[oppdater når avklart]</span></dd></div>
           </dl>
         </div>
         <div>
@@ -622,14 +447,6 @@
           <p>Nei. Programmet er lagt opp for en blandet gruppe, fra dem som er nysgjerrige til dem som allerede har prøvd teknologien.</p>
         </details>
         <details>
-          <summary>Blir det hands-on?</summary>
-          <p>Det er ikke avklart. Programmet har rom for en kort introduksjon eller en workshop i stedet for andre showcase-blokk. <span class="tbd">[Oppdater, og legg til forhåndskrav hvis det blir workshop.]</span></p>
-        </details>
-        <details>
-          <summary>Kan jeg delta digitalt?</summary>
-          <p>Vi vurderer å strømme forelesningsdelen. Rundbordene foregår på stedet. <span class="tbd">[Oppdater når avklart.]</span></p>
-        </details>
-        <details>
           <summary>Er konferansen bare for dem som jobber med kart?</summary>
           <p>Nei. Konferansen retter seg også mot IT-bransjen, offentlig sektor og forskningsmiljøer som forvalter eller bruker store datasett.</p>
         </details>
@@ -639,26 +456,17 @@
         </details>
         <details>
           <summary>Kan jeg holde innlegg?</summary>
-          <p>Det kan være rom for flere showcaser. Ta gjerne kontakt på <a href="mailto:skygeo@example.no"><span class="tbd">skygeo@example.no</span></a> hvis du har resultater eller erfaringer som passer inn. <span class="tbd">[Avklar om det blir en åpen call.]</span></p>
+          <p>Ja. Send inn forslag til foredrag, demoer eller kurs via <a href="#innsending">skjemaet</a>. Frist er 10. desember.</p>
         </details>
       </div>
     </section>
 
-    <!-- ===== RETNINGSLINJER ===== -->
-    <section class="coc" id="retningslinjer">
-      <div class="wrap">
-        <h2>Retningslinjer</h2>
-        <!-- TODO: tilpass teksten, evt. bruk dere sine egne rutiner/varslingskanal -->
-        <p>SkyGeo skal være en hyggelig og inkluderende konferanse for alle som deltar. Vi forventer respektfull oppførsel overfor deltakere, foredragsholdere, partnere og frivillige, og tolererer ikke trakassering i noen form.</p>
-        <p>Opplever du eller ser du noe som ikke er greit, si fra til en av arrangørene eller på <a href="mailto:skygeo@example.no"><span class="tbd">skygeo@example.no</span></a>.</p>
-      </div>
-    </section>
-
-    <!-- ===== AVSLUTTENDE CTA ===== -->
+    <!-- ===== PÅMELDING ===== -->
     <section class="final on-dark" id="pamelding">
       <div class="wrap">
-        <h2>Meld deg på SkyGeo 2026</h2>
+        <h2>Meld deg på SkyGeo 2027</h2>
         <p>Konferansen er åpen for alle. Påmelding skjer via <span class="tbd">[påmeldingsløsning]</span>.</p>
+        <p class="price-line">Ordinær <span class="tbd">[kr]</span> · Student <span class="tbd">[kr]</span> · Prisen dekker <span class="tbd">[bekreft: kaffe og lunsj]</span></p>
         <a class="btn btn-primary cta" href="#" id="register-link">Gå til påmelding</a>
       </div>
     </section>
@@ -666,8 +474,9 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>SkyGeo 2026 er en nasjonal, åpen konferanse om Cloud Native Geospatial for raster- og vektordata. <span class="tbd">[Legg inn støttelogo/tekst fra Norges forskningsråd hvis bevilgningen krever det.]</span></p>
-      <p>Kontakt: <a href="mailto:skygeo@example.no"><span class="tbd">skygeo@example.no</span></a></p>
+      <p>SkyGeo 2027 er en nasjonal, åpen konferanse om Cloud Native Geospatial for raster- og vektordata.</p>
+      <!-- TODO: tilpass teksten, evt. bruk dere sine egne rutiner/varslingskanal -->
+      <p><strong>Retningslinjer:</strong> SkyGeo skal være en hyggelig og inkluderende konferanse. Vi forventer respektfull oppførsel og tolererer ikke trakassering. Opplever eller ser du noe som ikke er greit, si fra til en av arrangørene.</p>
     </div>
   </footer>
 
@@ -681,7 +490,9 @@
        ============================================================ */
     const CONFIG = {
       // Lenke til påmeldingsskjema. Tom = knappene scroller til påmeldingsseksjonen.
-      registerUrl: ""
+      registerUrl: "",
+      // Lenke til skjema for innsending av foredrag, demoer og kurs. Tom = knappene scroller til innsendingsseksjonen.
+      submitUrl: ""
     };
 
     /* ---------- Påmeldingslenker ---------- */
@@ -692,6 +503,15 @@
       } else {
         link.addEventListener('click', e => e.preventDefault());
       }
+    })();
+
+    /* ---------- Innsendingslenker ---------- */
+    (function () {
+      if (!CONFIG.submitUrl) return;
+      ['submit-link', 'submit-nav'].forEach(id => {
+        const a = document.getElementById(id);
+        a.href = CONFIG.submitUrl; a.target = "_blank"; a.rel = "noopener";
+      });
     })();
 
     /* ---------- Mobil: vis sticky CTA etter hero, skjul ved påmeldingsseksjonen ---------- */
